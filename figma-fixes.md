@@ -41,15 +41,19 @@
       it's really meant to be 600, re-set it (may have been bulk-edited to 700 by accident). (`Design.md`
       §3.)
 
-- [ ] **ExtraBold body styles should be weight 800, not 700 — decided 09-12.** Related to the item
-      above: `Body/Small/sm-extrabold` already correctly reports weight **800** (Inter's real
-      "ExtraBold" — Inter's own scale is Bold=700, ExtraBold=800, Black=900). The other four
-      ExtraBold styles (`xl-extrabold`, `lg-extrabold`, `regular-extrabold`, `xs-extrabold`) report
-      **700** in the export — those are the ones that are wrong, not `sm-extrabold`. **Fix:** in
-      Figma, set `xl-extrabold`, `lg-extrabold`, `regular-extrabold`, and `xs-extrabold` to weight
-      **800**, matching `sm-extrabold`. Once fixed, re-export and update `Design.md` §3 and
-      `components/BlogPostCard.md` §4 (which currently still document/flag the pre-fix values).
-      (`Design.md` §3, `components/BlogPostCard.md` §4.)
+- [ ] **ExtraBold body styles should be weight 800, not 700 — decided 09-12, reaffirmed 2026-10-12.**
+      Related to the item above: as of the 12-09 export, `Body/Small/sm-extrabold` correctly reported
+      weight **800** (Inter's real "ExtraBold" — Inter's own scale is Bold=700, ExtraBold=800,
+      Black=900), and the other four ExtraBold styles (`xl-extrabold`, `lg-extrabold`,
+      `regular-extrabold`, `xs-extrabold`) reported **700** — wrong.
+      ⚠️ **Regression found in a fresh export, 2026-10-12** (`Figma JSON/figma-export.json`,
+      `figmaFileKey: "unknown"` — provenance unclear): **all five** ExtraBold styles, including
+      `sm-extrabold`, now report **700**. Nothing in Figma has been fixed; if anything the one
+      previously-correct style regressed. **Rodrigo reaffirmed 2026-10-12: code stays at 800** for
+      ExtraBold regardless of what this export reports — don't flip code to 700 off this file. **Fix
+      still needed in Figma:** set all five ExtraBold body styles to weight **800**. Once actually
+      fixed, re-export and update `Design.md` §3 and `components/BlogPostCard.md` §4.
+      (`Design.md` §3, `components/BlogPostCard.md` §4, `conversational-portfolio/DRIFT.md` #2.)
 
 - [ ] **Two isolated body-style artifacts** (found 09-12): `Body/Large/lg-semibold` carries a stray
       `textTransform: upper` that no other semibold style has (looks copy-pasted from `lg-extrabold`).

@@ -32,6 +32,17 @@ required for the weight to render as drawn, not faked-bold by the browser).
 **Backport:** add the same var to `rodrigoseoane-2026/styles/tokens.css`, and `"800"` to Inter's
 weight array in its `app/layout.tsx`.
 
+> **Reaffirmed 2026-10-12, no code change needed.** A fresh export (`Figma JSON/figma-export.json`,
+> provenance unclear — `figmaFileKey: "unknown"`) shows all five ExtraBold body styles, including
+> `sm-extrabold` (previously the one correct one), reporting weight 700 — a regression, not a fix.
+> Rodrigo confirmed code stays at 800 regardless. This needed no code change: Tailwind's native
+> `font-extrabold` utility already renders 800 by default (independent of this file's
+> `--font-weight-extrabold` var, which nothing currently consumes directly — the copied components
+> apply ExtraBold via `font-extrabold` composed with a `.type-body-*` class, e.g. `MetricTile.tsx`'s
+> title and `TestimonialCard.tsx`'s role label), so the 800 weight was already correct in every
+> rendered output before this question came up. Logged in `figma-fixes.md` so the still-needed Figma
+> fix (all five styles → 800) isn't lost.
+
 ## 3. Missing Scale steps — added 2.5, 3.5, 7, 9, 11, 13, 14, 15
 
 **Was:** `styles/tokens.css`'s Scale layer had: 0, 0.25, 0.5, 1, 2, 3, 4, 4.5, 5, 6, 8, 10, 12, 16,
