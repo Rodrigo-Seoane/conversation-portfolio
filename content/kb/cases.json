@@ -1,0 +1,120 @@
+[
+  {
+    "id": "case-h-atlas-onboarding",
+    "title": "Atlas Onboarding / ATLAS Play",
+    "industry": "B2B software / iBPM platform (specific sector to confirm)",
+    "productType": "iBPM platform — onboarding",
+    "problemTags": ["onboarding", "activation", "design-system"],
+    "role": "Exact attribution (lead vs. contributor) is not stated in the public case and is pending confirmation.",
+    "contributions": [
+      "16 user interviews",
+      "identified the lack of role-based tracks, insufficient documentation, and missing visual tools",
+      "designed role-based onboarding flows",
+      "built a WYSIWYG editor",
+      "ran workshops and collaborated on a modular Design System"
+    ],
+    "deliverables": [
+      "role-based onboarding flows",
+      "WYSIWYG editor",
+      "workshop outputs",
+      "modular Design System contributions"
+    ],
+    "results": [
+      {
+        "label": "SUS score change",
+        "value": "+10.2 points",
+        "measurementStatus": "published_method_pending"
+      },
+      {
+        "label": "Enterprise sales described as \"low-friction\" post-launch",
+        "value": "+53%",
+        "measurementStatus": "published_method_pending"
+      },
+      {
+        "label": "Reduction in UI debates",
+        "value": "-40%",
+        "measurementStatus": "published_method_pending"
+      }
+    ],
+    "publicUrl": "https://www.rodrigoseoane.com/work/atlas-onboarding",
+    "visibility": "public",
+    "status": "review_before_publish",
+    "source": "Inventário de Conteúdo §3 — Case histórico H; public case page"
+  },
+  {
+    "id": "case-i-axa-go-agent-sales-coach",
+    "title": "AXA GO Agent Sales Coach / Customer Simulator",
+    "industry": "Insurance / corporate operations",
+    "productType": "AI-assisted training & simulation tool",
+    "problemTags": ["onboarding", "training", "ai", "attrition"],
+    "role": "CV records leadership of two AI proofs of concept during this period at AXA Group Operations; the exact role within this specific case is not confirmed.",
+    "contributions": [
+      "research across five entities (Germany, Spain, Italy, France, and Switzerland)",
+      "collaboration with developers and AI specialists",
+      "concepts for personalized courses",
+      "quiz/test concepts",
+      "AI-persona simulation concepts"
+    ],
+    "deliverables": [
+      "research synthesis",
+      "personalized course concepts",
+      "quiz/test concepts",
+      "AI persona simulation concepts"
+    ],
+    "results": [
+      {
+        "label": "Internal recognition",
+        "value": "Internal recognition for innovation; approved to pilot the solution in one AXA entity",
+        "measurementStatus": "published_method_pending"
+      },
+      {
+        "label": "Metric referenced in the public case (exact definition unconfirmed — do not read as a causal or comparative result)",
+        "value": "43%",
+        "measurementStatus": "published_method_pending"
+      }
+    ],
+    "publicUrl": "https://www.rodrigoseoane.com/work/axa-go-agent-sales-coach",
+    "visibility": "public",
+    "status": "review_before_publish",
+    "source": "Inventário de Conteúdo §3 — Case histórico I; CV; public case page"
+  },
+  {
+    "id": "case-j-atlas-optimise",
+    "title": "Atlas Optimise®",
+    "industry": "B2B software",
+    "productType": "Analytics / dashboard platform",
+    "problemTags": ["dashboards", "retention", "stakeholder-alignment"],
+    "role": "Exact attribution beyond workshop facilitation and system-design contributions is not stated in the public case and is pending confirmation.",
+    "contributions": [
+      "workshops with PMs, engineering, and executives",
+      "personas",
+      "navigation redesign",
+      "role-based dashboards",
+      "low-fidelity prototypes validated with managers",
+      "scalable Design System"
+    ],
+    "deliverables": [
+      "personas",
+      "redesigned navigation",
+      "role-based dashboards",
+      "prototypes",
+      "Design System"
+    ],
+    "results": [
+      {
+        "label": "Enterprise customer retention (6 months)",
+        "value": "+31%",
+        "measurementStatus": "published_method_pending"
+      },
+      {
+        "label": "New leads attributed to the B2B marketplace",
+        "value": "16%",
+        "measurementStatus": "published_method_pending"
+      }
+    ],
+    "publicUrl": "https://www.rodrigoseoane.com/work/atlas-optimise-r",
+    "visibility": "public",
+    "status": "review_before_publish",
+    "source": "Inventário de Conteúdo §3 — Case histórico J; public case page"
+  }
+]

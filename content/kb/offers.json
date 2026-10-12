@@ -1,0 +1,64 @@
+[
+  {
+    "id": "offer-embedded-designer",
+    "title": "Embedded Designer",
+    "type": "engagement_model",
+    "summary": "An embedded design engagement, published on the site for periods of 3 to 12 months.",
+    "caveats": [
+      "Conditions, taxes, scope, and real availability for this model are not yet confirmed."
+    ],
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §5 — Modelos publicados; Home"
+  },
+  {
+    "id": "offer-advisory-retainer",
+    "title": "Advisory Retainer",
+    "type": "engagement_model",
+    "summary": "Strategic guidance and ongoing collaboration with product and design teams.",
+    "caveats": [
+      "Conditions, taxes, scope, and real availability for this model are not yet confirmed."
+    ],
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §5 — Modelos publicados; Home"
+  },
+  {
+    "id": "offer-workshop-facilitation",
+    "title": "Workshop Facilitation",
+    "type": "engagement_model",
+    "summary": "Facilitation, alignment, and prototyping sessions with product and engineering stakeholders.",
+    "caveats": [
+      "Conditions, taxes, scope, and real availability for this model are not yet confirmed."
+    ],
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §5 — Modelos publicados; Home"
+  },
+  {
+    "id": "offer-ux-pulse-check",
+    "title": "UX Pulse Check",
+    "type": "service",
+    "summary": "A UX audit service (not a client case): heuristic analysis of three flows, diagnosis of conversion-loss points, impact estimates in euros, quick wins, and benchmarking.",
+    "pricingTiers": [
+      {
+        "tier": "Essentials",
+        "price": "€490",
+        "turnaround": "3–5 business days"
+      },
+      {
+        "tier": "Audit + UI Redesign",
+        "price": "€1,490",
+        "turnaround": "7–10 business days"
+      }
+    ],
+    "caveats": [
+      "The site also advertises a \"3 days\" delivery promise that conflicts with the per-package turnaround times above — this inconsistency is unresolved.",
+      "Whether the 15–30% recovery range is a hypothesis, an observation, or a proven result is unconfirmed.",
+      "Confirmation that these prices and turnaround times are still valid is pending."
+    ],
+    "status": "review_before_publish",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §3 — Oferta K; §5 — Pendências comerciais; UX Pulse Check page"
+  }
+]

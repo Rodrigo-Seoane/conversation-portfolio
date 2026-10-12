@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cap-b2b-saas-workflows",
+    "title": "B2B SaaS product design for complex operational workflows",
+    "description": "Designing for multi-module, operational B2B platforms — the kind of workflow complexity found in contact-center and cloud-operations software.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §1 — Capacidades mais bem sustentadas"
+  },
+  {
+    "id": "cap-onboarding-ftux",
+    "title": "Onboarding / FTUX strategy and guided tutorials",
+    "description": "Auditing onboarding approaches across modules and defining a reusable guided-tutorial model (welcome modal, progressive contextual tips, persistent help panel, re-activation of completed tutorials).",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §1–§2 — FTUX e onboarding"
+  },
+  {
+    "id": "cap-design-systems-at-scale",
+    "title": "Design systems at scale — tokens, components, governance",
+    "description": "Evolving tokens, components, variants, layouts, typography, and color; documenting implementation requirements, testing, and Jira-linked handoff; connecting systemic work to product delivery rather than only visual maintenance.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §1–§2 — Design System e qualidade"
+  },
+  {
+    "id": "cap-ux-quality-accessibility",
+    "title": "UX/UI quality review and accessibility applied to states and interactions",
+    "description": "Reviewing keyboard focus, modal semantics, feedback, disabled states, breadcrumbs, and navigation consistency.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §2 — Design System e qualidade"
+  },
+  {
+    "id": "cap-discovery-cross-functional",
+    "title": "Discovery with SMEs, cross-functional alignment, and dependency management",
+    "description": "Clarifying requirements and terminology with stakeholders and subject-matter experts; turning broad initiatives into phases, epics, stories, dependencies, and explicit decisions; making risks, open questions, and ownership visible.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §2 — Product strategy e definição de escopo"
+  },
+  {
+    "id": "cap-prototyping-handoff",
+    "title": "Prototyping, documentation, and implementation-ready handoff",
+    "description": "Producing prototypes, component pages, specifications, Jira structures, and handoff material; incorporating development feedback and QA findings into the next iteration.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §2 — Colaboração e entrega"
+  },
+  {
+    "id": "cap-ai-assisted-design-ops",
+    "title": "AI-assisted design workflows and agentic-process exploration",
+    "description": "Producing specifications with an AI-assisted design flow and specifying an agentic workflow for Figma documentation and Jira management — treating feasibility, human review, and safety as explicit requirements, without claiming unmeasured autonomy or productivity gains.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §1–§2 — AI e operações de design"
+  },
+  {
+    "id": "cap-information-architecture",
+    "title": "Information architecture and workflow design",
+    "description": "Defining taxonomies, onboarding priorities, navigation, and terminology; designing interactions with multi-select, contextual menus, drawers, loading states, and progressive disclosure.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §2 — Arquitetura da informação e workflows"
+  }
+]
