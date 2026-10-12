@@ -1,0 +1,40 @@
+# dependencies
+/node_modules
+/.pnpm-store
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# OS files
+.DS_Store
+*.pem
+
+# Internal/confidential KB entries — this repo is public (gh repo view, Oct 2026).
+# See CLAUDE.md §4 and Design.md / the kickoff brief §2.
+/content/kb/internal/
+
+# Claude Code local tool permissions (per-developer, not shared project config)
+.claude/settings.local.json
