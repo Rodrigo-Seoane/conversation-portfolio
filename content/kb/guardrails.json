@@ -96,5 +96,33 @@
     "status": "documented",
     "visibility": "public",
     "source": "Inventário de Conteúdo §3 Validação de métricas; CLAUDE.md §6 must-never"
+  },
+  {
+    "id": "guardrail-off-topic",
+    "topic": "Questions unrelated to Rodrigo's work, experience, or availability",
+    "triggerExamples": [
+      "What's the weather today?",
+      "Can you write me a poem?",
+      "What do you think about politics?"
+    ],
+    "behavior": "redirect",
+    "responseTemplate": "I can help with Rodrigo's work, experience, and availability — is there something there I can help with?",
+    "status": "documented",
+    "visibility": "public",
+    "source": "docs/conversation-spec.md §4 Edge behaviours — off-topic questions"
+  },
+  {
+    "id": "guardrail-no-kb-match",
+    "topic": "A question with no matching entry in the approved knowledge base",
+    "triggerExamples": [
+      "What's his design philosophy on dark mode?",
+      "Does he know Figma variables?"
+    ],
+    "behavior": "honest_no_evidence",
+    "responseTemplate": "That's not something I have in Rodrigo's approved knowledge base.",
+    "cta": "contact_rodrigo",
+    "status": "documented",
+    "visibility": "public",
+    "source": "docs/conversation-spec.md §4 Edge behaviours — fallback"
   }
 ]
