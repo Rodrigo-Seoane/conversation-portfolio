@@ -27,11 +27,16 @@
 > - If a component reveals a token not documented here, that's a signal this snapshot is stale — flag
 >   it, don't invent or guess the token's place.
 >
-> ✅ **Provenance note:** reconciled against the **closing export (12-09)** —
-> `Figma JSON/figma-variables-12-09.json`, the current single reference file (supersedes all earlier
-> dated exports, which have been deleted). Three collections: Primitives → Semantic → **Context**.
-> Components reference Context. Old `Surface/*` naming retired. This export also carries the full
-> `textStyles` array (Display/Heading/Body/Caption) and the grid style — see §3.
+> ✅ **Provenance note (updated 2026-10-12, this repo only):** the current single reference file is
+> `Figma JSON/figma-export.json` (exported 2026-10-12T11:17:35Z), which **supersedes** the earlier
+> 12-09 export — that file is kept for history at `Figma JSON/archived/figma-variables-12-09.json`,
+> not deleted. Checked against it line-by-line: all resolved values (Scale, Round Corners, Border
+> Thick, Section Padding, Context colors) are identical; the known-open anomalies (body
+> "semibold"/"extrabold" weights reporting 700, the `lg-semibold` stray uppercase, the missing
+> `xs-extrabold` treatment, the "Defualt" typo) are all still present, unresolved — see
+> `figma-fixes.md`. Three collections: Primitives → Semantic → **Context**. Components reference
+> Context. Old `Surface/*` naming retired. This export also carries the full `textStyles` array
+> (Display/Heading/Body/Caption) and the grid style — see §3.
 > ⚠️ Per the sequencing decision (`CLAUDE.md` §7), this reconciliation is a **values sync only** — no
 > component code is implemented yet; five Home sections are still undocumented as of this pass.
 
@@ -74,7 +79,7 @@ exists for that use. (Semantic is still fine for a component-internal role with 
 e.g. a button fill — but prefer Context for backgrounds and text.)
 
 > **Source:** Figma `SQxK0aLPYfOCGVCUUnjzm6`, variable collections **Primitives**, **Semantic**,
-> **Context** (closing export, 12-09 — `Figma JSON/figma-variables-12-09.json`). The old three-tier
+> **Context** (`Figma JSON/figma-export.json`). The old three-tier
 > `Surface/*` naming is gone.
 
 ### Layer 1 — Primitives (raw ramps; never used directly)
@@ -112,7 +117,7 @@ Semantic renames the same ramps to their **application role**, dropping the prim
 | Accent Colors/Warning | state | 50 · 100 · 200 · 300 · **Default**(`#EAA93C`) · 500 · 600 · 700 | `#EAA93C` |
 | Accent Colors/Info | state | 50 · 100 · 200 · 300 · **Default**(`#2859AB`) · 500 · 600 · 700 | `#2859AB` |
 
-Full per-step hex values live in `Figma JSON/figma-variables-12-09.json` (`collections.Semantic.variables.colors`) — this table is the map from role to ramp, not a hex duplicate.
+Full per-step hex values live in `Figma JSON/figma-export.json` (`collections.Semantic.variables.colors`) — this table is the map from role to ramp, not a hex duplicate.
 
 ### Layer 3 — Context (what components actually reference)
 

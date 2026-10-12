@@ -39,10 +39,20 @@ changes the CTA and the depth of an answer — **never the facts**.
 
 This is a separate, new repo — different runtime (LLM API, server routes, secrets, rate limiting),
 separate deploy, and the old site is mid-build. The design system is **copied, not shared**:
-`Design.md`, `figma-fixes.md`, `Figma JSON/figma-variables-12-09.json`, `styles/tokens.css`,
-`AGENTS.md`, and a subset of `components/*.md` + `components/ui/*.tsx` were mirrored in on
-2026-10-12 (commit `aae5036a2d7f20c8a378e6a6298b85dcb36384a6` of `rodrigoseoane-2026`), with known
-drift fixed on import — see `DRIFT.md` for exactly what changed and what to backport.
+`Design.md`, `figma-fixes.md`, `styles/tokens.css`, `AGENTS.md`, and a subset of `components/*.md` +
+`components/ui/*.tsx` were mirrored in on 2026-10-12 (commit
+`aae5036a2d7f20c8a378e6a6298b85dcb36384a6` of `rodrigoseoane-2026`), with known drift fixed on
+import — see `DRIFT.md` for exactly what changed and what to backport. The live Figma reference
+file for *this* repo is `Figma JSON/figma-export.json` (exported 2026-10-12, superseding the
+mirrored 12-09 export, which is kept for history at `Figma JSON/archived/figma-variables-12-09.json`
+— see `Design.md`'s provenance note).
+
+> **Component status (2026-10-12):** the mirrored `components/ui/*` were built for the old static
+> site, not this chat UI. The foundations — color, typography, and the 4px Scale grid — are what
+> must be kept faithful to Figma; the existing components are a reference, not a locked library, and
+> should be expected to need rework. Which chat-specific cards are genuinely new is Phase 3's job
+> (`docs/conversation-spec.md`'s "Card inventory" section) — don't treat the 8 mirrored components as
+> the final card set.
 
 > **`rodrigoseoane-2026` is read-only for this project.** Never modify it, never commit to it, never
 > run git commands in it. If a design-system fix is needed, make it here and log it in `DRIFT.md`

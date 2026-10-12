@@ -1,0 +1,1845 @@
+{
+  "styles": {
+    "colors": [],
+    "textStyles": [
+      {
+        "name": "Display/Page Title",
+        "token": "display-page-title",
+        "type": "text",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "700",
+        "fontSize": "56px",
+        "lineHeight": 1.100000023841858,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Display/Subtitle",
+        "token": "display-subtitle",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "20px",
+        "lineHeight": 1.4800000190734863,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Display/Mobile Title",
+        "token": "display-mobile-title",
+        "type": "text",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "700",
+        "fontSize": "40px",
+        "lineHeight": 1.100000023841858,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Display/Mobile Subtitle",
+        "token": "display-mobile-subtitle",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": 1.3200000524520874,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Heading/H1",
+        "token": "heading-h1",
+        "type": "text",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "600",
+        "fontSize": "28px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Heading/H2",
+        "token": "heading-h2",
+        "type": "text",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "600",
+        "fontSize": "24px",
+        "lineHeight": "30px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Heading/H3",
+        "token": "heading-h3",
+        "type": "text",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "600",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Heading/H4",
+        "token": "heading-h4",
+        "type": "text",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "600",
+        "fontSize": "18px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Heading/H5",
+        "token": "heading-h5",
+        "type": "text",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "600",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Body/Extra Large/xl-light",
+        "token": "body-extra-large-xl-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Extra Large/xl-regular",
+        "token": "body-extra-large-xl-regular",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Extra Large/xl-semibold",
+        "token": "body-extra-large-xl-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Extra Large/xl-extrabold",
+        "token": "body-extra-large-xl-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "1px",
+        "textTransform": "upper"
+      },
+      {
+        "name": "Body/Large/lg-light",
+        "token": "body-large-lg-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Large/lg-regular",
+        "token": "body-large-lg-regular",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Large/lg-semibold",
+        "token": "body-large-lg-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0%",
+        "textTransform": "upper"
+      },
+      {
+        "name": "Body/Large/lg-extrabold",
+        "token": "body-large-lg-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "1px",
+        "textTransform": "upper"
+      },
+      {
+        "name": "Body/Regular/regular-light",
+        "token": "body-regular-regular-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Regular/regular-md",
+        "token": "body-regular-regular-md",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Regular/regular-semibold",
+        "token": "body-regular-regular-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Regular/regular-extrabold",
+        "token": "body-regular-regular-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "1px",
+        "textTransform": "upper"
+      },
+      {
+        "name": "Body/Small/sm-light",
+        "token": "body-small-sm-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "12px",
+        "lineHeight": "20px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Small/sm-regular",
+        "token": "body-small-sm-regular",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "12px",
+        "lineHeight": "20px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Small/sm-semibold",
+        "token": "body-small-sm-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "12px",
+        "lineHeight": "20px",
+        "letterSpacing": "2%"
+      },
+      {
+        "name": "Body/Small/sm-extrabold",
+        "token": "body-small-sm-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "12px",
+        "lineHeight": "20px",
+        "letterSpacing": "1px",
+        "textTransform": "upper"
+      },
+      {
+        "name": "Body/Extra Small/xs-light",
+        "token": "body-extra-small-xs-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "10px",
+        "lineHeight": "16px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Extra Small/xs-regular",
+        "token": "body-extra-small-xs-regular",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "10px",
+        "lineHeight": "16px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Extra Small/xs-semibold",
+        "token": "body-extra-small-xs-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "10px",
+        "lineHeight": "16px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Body/Extra Small/xs-extrabold",
+        "token": "body-extra-small-xs-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "10px",
+        "lineHeight": "16px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "Caption/large",
+        "token": "caption-large",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "4%",
+        "textTransform": "upper"
+      },
+      {
+        "name": "Caption/regular",
+        "token": "caption-regular",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "10px",
+        "lineHeight": "12px",
+        "letterSpacing": "4%"
+      },
+      {
+        "name": "Caption/small",
+        "token": "caption-small",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "8px",
+        "lineHeight": "12px",
+        "letterSpacing": "4%",
+        "textTransform": "title"
+      }
+    ],
+    "effectStyles": [],
+    "gridStyles": [
+      {
+        "name": "Desktop 12 Cols",
+        "token": "desktop-12-cols",
+        "type": "grid",
+        "grids": [
+          {
+            "pattern": "columns",
+            "count": 12,
+            "gutter": 16,
+            "margin": 64
+          }
+        ]
+      }
+    ]
+  },
+  "collections": {
+    "Primitives": {
+      "id": "VariableCollectionId:1:109",
+      "modes": [
+        {
+          "id": "1:0",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [
+          {
+            "name": "Primary Colors/Vibrant Gold/50",
+            "token": "primary-colors-vibrant-gold-50",
+            "type": "color",
+            "value": "#fffdf3"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/200",
+            "token": "primary-colors-vibrant-gold-200",
+            "type": "color",
+            "value": "#fff6d0"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/300",
+            "token": "primary-colors-vibrant-gold-300",
+            "type": "color",
+            "value": "#ffeda1"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/400",
+            "token": "primary-colors-vibrant-gold-400",
+            "type": "color",
+            "value": "#ffe373"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/500",
+            "token": "primary-colors-vibrant-gold-500",
+            "type": "color",
+            "value": "#ffda44"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/Defualt",
+            "token": "primary-colors-vibrant-gold-defualt",
+            "type": "color",
+            "value": "#ffd115"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/700",
+            "token": "primary-colors-vibrant-gold-700",
+            "type": "color",
+            "value": "#cca711"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/800",
+            "token": "primary-colors-vibrant-gold-800",
+            "type": "color",
+            "value": "#997d0d"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/900",
+            "token": "primary-colors-vibrant-gold-900",
+            "type": "color",
+            "value": "#665408"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/1000",
+            "token": "primary-colors-vibrant-gold-1000",
+            "type": "color",
+            "value": "#332a04"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/1100",
+            "token": "primary-colors-vibrant-gold-1100",
+            "type": "color",
+            "value": "#1a1502"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/1200",
+            "token": "primary-colors-vibrant-gold-1200",
+            "type": "color",
+            "value": "#0d0a01"
+          },
+          {
+            "name": "Primary Colors/Vibrant Gold/100",
+            "token": "primary-colors-vibrant-gold-100",
+            "type": "color",
+            "value": "#fffae8"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/50",
+            "token": "primary-colors-orange-zest-50",
+            "type": "color",
+            "value": "#fdf3ed"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/100",
+            "token": "primary-colors-orange-zest-100",
+            "type": "color",
+            "value": "#fbe2d1"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/200",
+            "token": "primary-colors-orange-zest-200",
+            "type": "color",
+            "value": "#f9d1b6"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/300",
+            "token": "primary-colors-orange-zest-300",
+            "type": "color",
+            "value": "#f6c09a"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/400",
+            "token": "primary-colors-orange-zest-400",
+            "type": "color",
+            "value": "#f4af7f"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/500",
+            "token": "primary-colors-orange-zest-500",
+            "type": "color",
+            "value": "#f19d63"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/700",
+            "token": "primary-colors-orange-zest-700",
+            "type": "color",
+            "value": "#cb773d"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/800",
+            "token": "primary-colors-orange-zest-800",
+            "type": "color",
+            "value": "#a76232"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/900",
+            "token": "primary-colors-orange-zest-900",
+            "type": "color",
+            "value": "#834d28"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/1000",
+            "token": "primary-colors-orange-zest-1000",
+            "type": "color",
+            "value": "#60381d"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/1100",
+            "token": "primary-colors-orange-zest-1100",
+            "type": "color",
+            "value": "#3c2312"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/1200",
+            "token": "primary-colors-orange-zest-1200",
+            "type": "color",
+            "value": "#180e07"
+          },
+          {
+            "name": "Primary Colors/Neutral/50",
+            "token": "primary-colors-neutral-50",
+            "type": "color",
+            "value": "#f7f7f7"
+          },
+          {
+            "name": "Primary Colors/Neutral/200",
+            "token": "primary-colors-neutral-200",
+            "type": "color",
+            "value": "#c7c8c6"
+          },
+          {
+            "name": "Primary Colors/Neutral/300",
+            "token": "primary-colors-neutral-300",
+            "type": "color",
+            "value": "#979994"
+          },
+          {
+            "name": "Primary Colors/Neutral/400",
+            "token": "primary-colors-neutral-400",
+            "type": "color",
+            "value": "#686b63"
+          },
+          {
+            "name": "Primary Colors/Neutral/500",
+            "token": "primary-colors-neutral-500",
+            "type": "color",
+            "value": "#383c31"
+          },
+          {
+            "name": "Primary Colors/Neutral/700",
+            "token": "primary-colors-neutral-700",
+            "type": "color",
+            "value": "#151612"
+          },
+          {
+            "name": "Primary Colors/Neutral/100",
+            "token": "primary-colors-neutral-100",
+            "type": "color",
+            "value": "#dfe0de"
+          },
+          {
+            "name": "Primary Colors/Neutral/600",
+            "token": "primary-colors-neutral-600",
+            "type": "color",
+            "value": "#262921"
+          },
+          {
+            "name": "Primary Colors/Orange Zest/Default",
+            "token": "primary-colors-orange-zest-default",
+            "type": "color",
+            "value": "#ef8c48"
+          },
+          {
+            "name": "Accent Colors/Success Green/50",
+            "token": "accent-colors-success-green-50",
+            "type": "color",
+            "value": "#f3fbee"
+          },
+          {
+            "name": "Accent Colors/Success Green/100",
+            "token": "accent-colors-success-green-100",
+            "type": "color",
+            "value": "#ddf4d2"
+          },
+          {
+            "name": "Accent Colors/Success Green/200",
+            "token": "accent-colors-success-green-200",
+            "type": "color",
+            "value": "#b5e89c"
+          },
+          {
+            "name": "Accent Colors/Success Green/300",
+            "token": "accent-colors-success-green-300",
+            "type": "color",
+            "value": "#87d95e"
+          },
+          {
+            "name": "Accent Colors/Success Green/Default",
+            "token": "accent-colors-success-green-default",
+            "type": "color",
+            "value": "#67d034"
+          },
+          {
+            "name": "Accent Colors/Success Green/500",
+            "token": "accent-colors-success-green-500",
+            "type": "color",
+            "value": "#4b9924"
+          },
+          {
+            "name": "Accent Colors/Success Green/600",
+            "token": "accent-colors-success-green-600",
+            "type": "color",
+            "value": "#244a11"
+          },
+          {
+            "name": "Accent Colors/Success Green/700",
+            "token": "accent-colors-success-green-700",
+            "type": "color",
+            "value": "#0c1906"
+          },
+          {
+            "name": "Accent Colors/Info Blue/50",
+            "token": "accent-colors-info-blue-50",
+            "type": "color",
+            "value": "#eef3fb"
+          },
+          {
+            "name": "Accent Colors/Warning Orange/50",
+            "token": "accent-colors-warning-orange-50",
+            "type": "color",
+            "value": "#fdf8ef"
+          },
+          {
+            "name": "Accent Colors/Warning Orange/100",
+            "token": "accent-colors-warning-orange-100",
+            "type": "color",
+            "value": "#fbeed8"
+          },
+          {
+            "name": "Accent Colors/Warning Orange/200",
+            "token": "accent-colors-warning-orange-200",
+            "type": "color",
+            "value": "#f7ddb1"
+          },
+          {
+            "name": "Accent Colors/Warning Orange/300",
+            "token": "accent-colors-warning-orange-300",
+            "type": "color",
+            "value": "#f1c780"
+          },
+          {
+            "name": "Accent Colors/Warning Orange/Default",
+            "token": "accent-colors-warning-orange-default",
+            "type": "color",
+            "value": "#eaa93c"
+          },
+          {
+            "name": "Accent Colors/Warning Orange/500",
+            "token": "accent-colors-warning-orange-500",
+            "type": "color",
+            "value": "#c79033"
+          },
+          {
+            "name": "Accent Colors/Warning Orange/600",
+            "token": "accent-colors-warning-orange-600",
+            "type": "color",
+            "value": "#815d21"
+          },
+          {
+            "name": "Accent Colors/Warning Orange/700",
+            "token": "accent-colors-warning-orange-700",
+            "type": "color",
+            "value": "#2f220c"
+          },
+          {
+            "name": "Accent Colors/Error Red/50",
+            "token": "accent-colors-error-red-50",
+            "type": "color",
+            "value": "#fef1f4"
+          },
+          {
+            "name": "Accent Colors/Error Red/100",
+            "token": "accent-colors-error-red-100",
+            "type": "color",
+            "value": "#fbc6d4"
+          },
+          {
+            "name": "Accent Colors/Error Red/200",
+            "token": "accent-colors-error-red-200",
+            "type": "color",
+            "value": "#f792ac"
+          },
+          {
+            "name": "Accent Colors/Error Red/300",
+            "token": "accent-colors-error-red-300",
+            "type": "color",
+            "value": "#f3547d"
+          },
+          {
+            "name": "Accent Colors/Error Red/Default",
+            "token": "accent-colors-error-red-default",
+            "type": "color",
+            "value": "#ef2056"
+          },
+          {
+            "name": "Accent Colors/Error Red/500",
+            "token": "accent-colors-error-red-500",
+            "type": "color",
+            "value": "#ab0c36"
+          },
+          {
+            "name": "Accent Colors/Error Red/600",
+            "token": "accent-colors-error-red-600",
+            "type": "color",
+            "value": "#690821"
+          },
+          {
+            "name": "Accent Colors/Error Red/700",
+            "token": "accent-colors-error-red-700",
+            "type": "color",
+            "value": "#130106"
+          },
+          {
+            "name": "Accent Colors/Info Blue/100",
+            "token": "accent-colors-info-blue-100",
+            "type": "color",
+            "value": "#d6e2f5"
+          },
+          {
+            "name": "Accent Colors/Info Blue/200",
+            "token": "accent-colors-info-blue-200",
+            "type": "color",
+            "value": "#a4beea"
+          },
+          {
+            "name": "Accent Colors/Info Blue/300",
+            "token": "accent-colors-info-blue-300",
+            "type": "color",
+            "value": "#5a89d8"
+          },
+          {
+            "name": "Accent Colors/Info Blue/Default",
+            "token": "accent-colors-info-blue-default",
+            "type": "color",
+            "value": "#2859ab"
+          },
+          {
+            "name": "Accent Colors/Info Blue/500",
+            "token": "accent-colors-info-blue-500",
+            "type": "color",
+            "value": "#1f4584"
+          },
+          {
+            "name": "Accent Colors/Info Blue/600",
+            "token": "accent-colors-info-blue-600",
+            "type": "color",
+            "value": "#11274a"
+          },
+          {
+            "name": "Accent Colors/Info Blue/700",
+            "token": "accent-colors-info-blue-700",
+            "type": "color",
+            "value": "#060d19"
+          }
+        ],
+        "numbers": [
+          {
+            "name": "Scale/0",
+            "token": "scale-0",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Scale/0,25",
+            "token": "scale-0-25",
+            "type": "float",
+            "value": 1
+          },
+          {
+            "name": "Scale/0,5",
+            "token": "scale-0-5",
+            "type": "float",
+            "value": 2
+          },
+          {
+            "name": "Scale/1",
+            "token": "scale-1",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "Scale/2",
+            "token": "scale-2",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "Scale/2,5",
+            "token": "scale-2-5",
+            "type": "float",
+            "value": 10
+          },
+          {
+            "name": "Scale/3",
+            "token": "scale-3",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "Scale/3,5",
+            "token": "scale-3-5",
+            "type": "float",
+            "value": 14
+          },
+          {
+            "name": "Scale/4",
+            "token": "scale-4",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "Scale/5",
+            "token": "scale-5",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "Scale/6",
+            "token": "scale-6",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "Scale/7",
+            "token": "scale-7",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "Scale/8",
+            "token": "scale-8",
+            "type": "float",
+            "value": 32
+          },
+          {
+            "name": "Scale/9",
+            "token": "scale-9",
+            "type": "float",
+            "value": 36
+          },
+          {
+            "name": "Scale/10",
+            "token": "scale-10",
+            "type": "float",
+            "value": 40
+          },
+          {
+            "name": "Scale/11",
+            "token": "scale-11",
+            "type": "float",
+            "value": 44
+          },
+          {
+            "name": "Scale/12",
+            "token": "scale-12",
+            "type": "float",
+            "value": 48
+          },
+          {
+            "name": "Scale/13",
+            "token": "scale-13",
+            "type": "float",
+            "value": 52
+          },
+          {
+            "name": "Scale/14",
+            "token": "scale-14",
+            "type": "float",
+            "value": 56
+          },
+          {
+            "name": "Scale/15",
+            "token": "scale-15",
+            "type": "float",
+            "value": 60
+          },
+          {
+            "name": "Scale/16",
+            "token": "scale-16",
+            "type": "float",
+            "value": 64
+          },
+          {
+            "name": "Scale/4,5",
+            "token": "scale-4-5",
+            "type": "float",
+            "value": 18
+          },
+          {
+            "name": "Scale/20",
+            "token": "scale-20",
+            "type": "float",
+            "value": 80
+          },
+          {
+            "name": "Scale/24",
+            "token": "scale-24",
+            "type": "float",
+            "value": 96
+          },
+          {
+            "name": "Scale/30",
+            "token": "scale-30",
+            "type": "float",
+            "value": 120
+          },
+          {
+            "name": "Scale/36",
+            "token": "scale-36",
+            "type": "float",
+            "value": 144
+          }
+        ],
+        "strings": [
+          {
+            "name": "Font Family/Heading",
+            "token": "font-family-heading",
+            "type": "string",
+            "value": "Plus Jakarta Sans"
+          },
+          {
+            "name": "Font Family/Body",
+            "token": "font-family-body",
+            "type": "string",
+            "value": "Inter"
+          },
+          {
+            "name": "Font Family/Caption",
+            "token": "font-family-caption",
+            "type": "string",
+            "value": "Inter"
+          },
+          {
+            "name": "Font Weight/Jakarta/Light",
+            "token": "font-weight-jakarta-light",
+            "type": "string",
+            "value": "Light"
+          },
+          {
+            "name": "Font Weight/Jakarta/Regular",
+            "token": "font-weight-jakarta-regular",
+            "type": "string",
+            "value": "Regular"
+          },
+          {
+            "name": "Font Weight/Jakarta/Semibold",
+            "token": "font-weight-jakarta-semibold",
+            "type": "string",
+            "value": "SemiBold"
+          },
+          {
+            "name": "Font Weight/Jakarta/Extra Bold",
+            "token": "font-weight-jakarta-extra-bold",
+            "type": "string",
+            "value": "ExtraBold"
+          },
+          {
+            "name": "Font Weight/Inter/Light",
+            "token": "font-weight-inter-light",
+            "type": "string",
+            "value": "Light"
+          },
+          {
+            "name": "Font Weight/Inter/Regular",
+            "token": "font-weight-inter-regular",
+            "type": "string",
+            "value": "Regular"
+          },
+          {
+            "name": "Font Weight/Inter/Semibold",
+            "token": "font-weight-inter-semibold",
+            "type": "string",
+            "value": "Semi Bold"
+          },
+          {
+            "name": "Font Weight/Inter/Extra Bold",
+            "token": "font-weight-inter-extra-bold",
+            "type": "string",
+            "value": "Extra Bold"
+          }
+        ],
+        "booleans": []
+      }
+    },
+    "Semantic": {
+      "id": "VariableCollectionId:5:445",
+      "modes": [
+        {
+          "id": "5:0",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [
+          {
+            "name": "Content Action/Secondary/700",
+            "token": "content-action-secondary-700",
+            "type": "color",
+            "value": "#151612"
+          },
+          {
+            "name": "Content Action/Secondary/600",
+            "token": "content-action-secondary-600",
+            "type": "color",
+            "value": "#262921"
+          },
+          {
+            "name": "Content Action/Secondary/Default",
+            "token": "content-action-secondary-default",
+            "type": "color",
+            "value": "#686b63"
+          },
+          {
+            "name": "Content Action/Secondary/300",
+            "token": "content-action-secondary-300",
+            "type": "color",
+            "value": "#979994"
+          },
+          {
+            "name": "Content Action/Secondary/200",
+            "token": "content-action-secondary-200",
+            "type": "color",
+            "value": "#c7c8c6"
+          },
+          {
+            "name": "Content Action/Secondary/500",
+            "token": "content-action-secondary-500",
+            "type": "color",
+            "value": "#383c31"
+          },
+          {
+            "name": "Content Action/Secondary/100",
+            "token": "content-action-secondary-100",
+            "type": "color",
+            "value": "#dfe0de"
+          },
+          {
+            "name": "Content Action/Secondary/50",
+            "token": "content-action-secondary-50",
+            "type": "color",
+            "value": "#f7f7f7"
+          },
+          {
+            "name": "Content Action/Primary/50",
+            "token": "content-action-primary-50",
+            "type": "color",
+            "value": "#fffdf3"
+          },
+          {
+            "name": "Content Action/Primary/100",
+            "token": "content-action-primary-100",
+            "type": "color",
+            "value": "#fffae8"
+          },
+          {
+            "name": "Content Action/Primary/200",
+            "token": "content-action-primary-200",
+            "type": "color",
+            "value": "#fff6d0"
+          },
+          {
+            "name": "Content Action/Primary/300",
+            "token": "content-action-primary-300",
+            "type": "color",
+            "value": "#ffeda1"
+          },
+          {
+            "name": "Content Action/Primary/400",
+            "token": "content-action-primary-400",
+            "type": "color",
+            "value": "#ffe373"
+          },
+          {
+            "name": "Content Action/Primary/500",
+            "token": "content-action-primary-500",
+            "type": "color",
+            "value": "#ffda44"
+          },
+          {
+            "name": "Content Action/Primary/Default",
+            "token": "content-action-primary-default",
+            "type": "color",
+            "value": "#ffd115"
+          },
+          {
+            "name": "Content Action/Primary/700",
+            "token": "content-action-primary-700",
+            "type": "color",
+            "value": "#cca711"
+          },
+          {
+            "name": "Content Action/Primary/800",
+            "token": "content-action-primary-800",
+            "type": "color",
+            "value": "#997d0d"
+          },
+          {
+            "name": "Content Action/Primary/900",
+            "token": "content-action-primary-900",
+            "type": "color",
+            "value": "#665408"
+          },
+          {
+            "name": "Content Action/Primary/1000",
+            "token": "content-action-primary-1000",
+            "type": "color",
+            "value": "#332a04"
+          },
+          {
+            "name": "Content Action/Primary/1100",
+            "token": "content-action-primary-1100",
+            "type": "color",
+            "value": "#1a1502"
+          },
+          {
+            "name": "Content Action/Primary/1200",
+            "token": "content-action-primary-1200",
+            "type": "color",
+            "value": "#0d0a01"
+          },
+          {
+            "name": "Content Action/Auxiliary/50",
+            "token": "content-action-auxiliary-50",
+            "type": "color",
+            "value": "#fdf3ed"
+          },
+          {
+            "name": "Content Action/Auxiliary/100",
+            "token": "content-action-auxiliary-100",
+            "type": "color",
+            "value": "#fbe2d1"
+          },
+          {
+            "name": "Content Action/Auxiliary/200",
+            "token": "content-action-auxiliary-200",
+            "type": "color",
+            "value": "#f9d1b6"
+          },
+          {
+            "name": "Content Action/Auxiliary/300",
+            "token": "content-action-auxiliary-300",
+            "type": "color",
+            "value": "#f6c09a"
+          },
+          {
+            "name": "Content Action/Auxiliary/400",
+            "token": "content-action-auxiliary-400",
+            "type": "color",
+            "value": "#f4af7f"
+          },
+          {
+            "name": "Content Action/Auxiliary/500",
+            "token": "content-action-auxiliary-500",
+            "type": "color",
+            "value": "#f19d63"
+          },
+          {
+            "name": "Content Action/Auxiliary/Default",
+            "token": "content-action-auxiliary-default",
+            "type": "color",
+            "value": "#ef8c48"
+          },
+          {
+            "name": "Content Action/Auxiliary/700",
+            "token": "content-action-auxiliary-700",
+            "type": "color",
+            "value": "#cb773d"
+          },
+          {
+            "name": "Content Action/Auxiliary/800",
+            "token": "content-action-auxiliary-800",
+            "type": "color",
+            "value": "#a76232"
+          },
+          {
+            "name": "Content Action/Auxiliary/900",
+            "token": "content-action-auxiliary-900",
+            "type": "color",
+            "value": "#834d28"
+          },
+          {
+            "name": "Content Action/Auxiliary/1000",
+            "token": "content-action-auxiliary-1000",
+            "type": "color",
+            "value": "#60381d"
+          },
+          {
+            "name": "Content Action/Auxiliary/1100",
+            "token": "content-action-auxiliary-1100",
+            "type": "color",
+            "value": "#3c2312"
+          },
+          {
+            "name": "Content Action/Auxiliary/1200",
+            "token": "content-action-auxiliary-1200",
+            "type": "color",
+            "value": "#180e07"
+          },
+          {
+            "name": "Accent Colors/Success/700",
+            "token": "accent-colors-success-700",
+            "type": "color",
+            "value": "#0c1906"
+          },
+          {
+            "name": "Accent Colors/Success/600",
+            "token": "accent-colors-success-600",
+            "type": "color",
+            "value": "#244a11"
+          },
+          {
+            "name": "Accent Colors/Success/300",
+            "token": "accent-colors-success-300",
+            "type": "color",
+            "value": "#87d95e"
+          },
+          {
+            "name": "Accent Colors/Success/Default",
+            "token": "accent-colors-success-default",
+            "type": "color",
+            "value": "#67d034"
+          },
+          {
+            "name": "Accent Colors/Success/200",
+            "token": "accent-colors-success-200",
+            "type": "color",
+            "value": "#b5e89c"
+          },
+          {
+            "name": "Accent Colors/Success/100",
+            "token": "accent-colors-success-100",
+            "type": "color",
+            "value": "#ddf4d2"
+          },
+          {
+            "name": "Accent Colors/Success/500",
+            "token": "accent-colors-success-500",
+            "type": "color",
+            "value": "#4b9924"
+          },
+          {
+            "name": "Accent Colors/Success/50",
+            "token": "accent-colors-success-50",
+            "type": "color",
+            "value": "#f3fbee"
+          },
+          {
+            "name": "Accent Colors/Error/700",
+            "token": "accent-colors-error-700",
+            "type": "color",
+            "value": "#130106"
+          },
+          {
+            "name": "Accent Colors/Warning/700",
+            "token": "accent-colors-warning-700",
+            "type": "color",
+            "value": "#2f220c"
+          },
+          {
+            "name": "Accent Colors/Error/600",
+            "token": "accent-colors-error-600",
+            "type": "color",
+            "value": "#690821"
+          },
+          {
+            "name": "Accent Colors/Error/500",
+            "token": "accent-colors-error-500",
+            "type": "color",
+            "value": "#ab0c36"
+          },
+          {
+            "name": "Accent Colors/Info/300",
+            "token": "accent-colors-info-300",
+            "type": "color",
+            "value": "#5a89d8"
+          },
+          {
+            "name": "Accent Colors/Error/100",
+            "token": "accent-colors-error-100",
+            "type": "color",
+            "value": "#fbc6d4"
+          },
+          {
+            "name": "Accent Colors/Error/50",
+            "token": "accent-colors-error-50",
+            "type": "color",
+            "value": "#fef1f4"
+          },
+          {
+            "name": "Accent Colors/Error/200",
+            "token": "accent-colors-error-200",
+            "type": "color",
+            "value": "#f792ac"
+          },
+          {
+            "name": "Accent Colors/Warning/600",
+            "token": "accent-colors-warning-600",
+            "type": "color",
+            "value": "#815d21"
+          },
+          {
+            "name": "Accent Colors/Warning/Default",
+            "token": "accent-colors-warning-default",
+            "type": "color",
+            "value": "#eaa93c"
+          },
+          {
+            "name": "Accent Colors/Warning/100",
+            "token": "accent-colors-warning-100",
+            "type": "color",
+            "value": "#fbeed8"
+          },
+          {
+            "name": "Accent Colors/Warning/50",
+            "token": "accent-colors-warning-50",
+            "type": "color",
+            "value": "#fdf8ef"
+          },
+          {
+            "name": "Accent Colors/Info/600",
+            "token": "accent-colors-info-600",
+            "type": "color",
+            "value": "#11274a"
+          },
+          {
+            "name": "Accent Colors/Info/500",
+            "token": "accent-colors-info-500",
+            "type": "color",
+            "value": "#1f4584"
+          },
+          {
+            "name": "Accent Colors/Info/Default",
+            "token": "accent-colors-info-default",
+            "type": "color",
+            "value": "#2859ab"
+          },
+          {
+            "name": "Accent Colors/Warning/300",
+            "token": "accent-colors-warning-300",
+            "type": "color",
+            "value": "#f1c780"
+          },
+          {
+            "name": "Accent Colors/Warning/500",
+            "token": "accent-colors-warning-500",
+            "type": "color",
+            "value": "#c79033"
+          },
+          {
+            "name": "Accent Colors/Info/100",
+            "token": "accent-colors-info-100",
+            "type": "color",
+            "value": "#d6e2f5"
+          },
+          {
+            "name": "Accent Colors/Error/Default",
+            "token": "accent-colors-error-default",
+            "type": "color",
+            "value": "#ef2056"
+          },
+          {
+            "name": "Accent Colors/Error/300",
+            "token": "accent-colors-error-300",
+            "type": "color",
+            "value": "#f3547d"
+          },
+          {
+            "name": "Accent Colors/Info/200",
+            "token": "accent-colors-info-200",
+            "type": "color",
+            "value": "#a4beea"
+          },
+          {
+            "name": "Accent Colors/Warning/200",
+            "token": "accent-colors-warning-200",
+            "type": "color",
+            "value": "#f7ddb1"
+          },
+          {
+            "name": "Accent Colors/Info/700",
+            "token": "accent-colors-info-700",
+            "type": "color",
+            "value": "#060d19"
+          },
+          {
+            "name": "Accent Colors/Info/50",
+            "token": "accent-colors-info-50",
+            "type": "color",
+            "value": "#eef3fb"
+          }
+        ],
+        "numbers": [
+          {
+            "name": "Round Corners/small",
+            "token": "round-corners-small",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "Border Thick/small",
+            "token": "border-thick-small",
+            "type": "float",
+            "value": 1
+          },
+          {
+            "name": "Round Corners/None",
+            "token": "round-corners-none",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Border Thick/x-large",
+            "token": "border-thick-x-large",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "Round Corners/x-large",
+            "token": "round-corners-x-large",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "Border Thick/large",
+            "token": "border-thick-large",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "Round Corners/regular",
+            "token": "round-corners-regular",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "Round Corners/round",
+            "token": "round-corners-round",
+            "type": "float",
+            "value": 64
+          },
+          {
+            "name": "Border Thick/regular",
+            "token": "border-thick-regular",
+            "type": "float",
+            "value": 2
+          },
+          {
+            "name": "Round Corners/large",
+            "token": "round-corners-large",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "Round Corners/x-small",
+            "token": "round-corners-x-small",
+            "type": "float",
+            "value": 2
+          },
+          {
+            "name": "Border Thick/None",
+            "token": "border-thick-none",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Text Size/Heading/h 3/Font Size",
+            "token": "text-size-heading-h-3-font-size",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "Text Size/Heading/h 2/Font Size",
+            "token": "text-size-heading-h-2-font-size",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "Text Size/Captions/Small/Size",
+            "token": "text-size-captions-small-size",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "Text Size/Captions/Regular/Lne Height",
+            "token": "text-size-captions-regular-lne-height",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "Text Size/Captions/Large/Paragraph Spacing",
+            "token": "text-size-captions-large-paragraph-spacing",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Text Size/Captions/Large/Lne Height",
+            "token": "text-size-captions-large-lne-height",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "Text Size/Paragraph/Extra Small/Size",
+            "token": "text-size-paragraph-extra-small-size",
+            "type": "float",
+            "value": 10
+          },
+          {
+            "name": "Text Size/Captions/Small/Paragraph Spacing",
+            "token": "text-size-captions-small-paragraph-spacing",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Text Size/Paragraph/Large/Size",
+            "token": "text-size-paragraph-large-size",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "Text Size/Heading/h 1/Font Size",
+            "token": "text-size-heading-h-1-font-size",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "Text Size/Paragraph/Regular/Paragraph Spacing",
+            "token": "text-size-paragraph-regular-paragraph-spacing",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Text Size/Paragraph/Regular/Lne Height",
+            "token": "text-size-paragraph-regular-lne-height",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "Text Size/Heading/h 2/Line Height",
+            "token": "text-size-heading-h-2-line-height",
+            "type": "float",
+            "value": 32
+          },
+          {
+            "name": "Text Size/Heading/h 4/Paragragh Spacing",
+            "token": "text-size-heading-h-4-paragragh-spacing",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "Text Size/Paragraph/Small/Lne Height",
+            "token": "text-size-paragraph-small-lne-height",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "Text Size/Heading/h 4/Line Height",
+            "token": "text-size-heading-h-4-line-height",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "Text Size/Paragraph/Regular/Size",
+            "token": "text-size-paragraph-regular-size",
+            "type": "float",
+            "value": 14
+          },
+          {
+            "name": "Text Size/Paragraph/Extra Small/Lne Height",
+            "token": "text-size-paragraph-extra-small-lne-height",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "Text Size/Heading/h 3/Line Height",
+            "token": "text-size-heading-h-3-line-height",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "Text Size/Paragraph/Small/Size",
+            "token": "text-size-paragraph-small-size",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "Text Size/Paragraph/Large/Paragraph Spacing",
+            "token": "text-size-paragraph-large-paragraph-spacing",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Text Size/Paragraph/Extra Large/Lne Height",
+            "token": "text-size-paragraph-extra-large-lne-height",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "Text Size/Heading/h 5/Paragragh Spacing",
+            "token": "text-size-heading-h-5-paragragh-spacing",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "Text Size/Captions/Large/Size",
+            "token": "text-size-captions-large-size",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "Text Size/Heading/h 5/Line Height",
+            "token": "text-size-heading-h-5-line-height",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "Text Size/Captions/Small/Line Height",
+            "token": "text-size-captions-small-line-height",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "Text Size/Captions/Regular/Paragraph Spacing",
+            "token": "text-size-captions-regular-paragraph-spacing",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Text Size/Heading/h 4/Font Size",
+            "token": "text-size-heading-h-4-font-size",
+            "type": "float",
+            "value": 18
+          },
+          {
+            "name": "Text Size/Paragraph/Extra Large/Paragraph Spacing",
+            "token": "text-size-paragraph-extra-large-paragraph-spacing",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Text Size/Heading/h 5/Font Size",
+            "token": "text-size-heading-h-5-font-size",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "Text Size/Heading/h 2/Paragragh Spacing",
+            "token": "text-size-heading-h-2-paragragh-spacing",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "Text Size/Paragraph/Extra Small/Paragraph Spacing",
+            "token": "text-size-paragraph-extra-small-paragraph-spacing",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Text Size/Paragraph/Small/Paragraph Spacing",
+            "token": "text-size-paragraph-small-paragraph-spacing",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Text Size/Captions/Regular/Size",
+            "token": "text-size-captions-regular-size",
+            "type": "float",
+            "value": 10
+          },
+          {
+            "name": "Text Size/Heading/h 3/Paragragh Spacing",
+            "token": "text-size-heading-h-3-paragragh-spacing",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "Text Size/Paragraph/Large/Lne Height",
+            "token": "text-size-paragraph-large-lne-height",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "Text Size/Heading/h 1/Line Height",
+            "token": "text-size-heading-h-1-line-height",
+            "type": "float",
+            "value": 36
+          },
+          {
+            "name": "Text Size/Heading/h 1/Paragragh Spacing",
+            "token": "text-size-heading-h-1-paragragh-spacing",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "Text Size/Paragraph/Extra Large/Size",
+            "token": "text-size-paragraph-extra-large-size",
+            "type": "float",
+            "value": 18
+          },
+          {
+            "name": "Section Padding/None",
+            "token": "section-padding-none",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "Section Padding/x-small",
+            "token": "section-padding-x-small",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "Section Padding/small",
+            "token": "section-padding-small",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "Section Padding/regular",
+            "token": "section-padding-regular",
+            "type": "float",
+            "value": 40
+          },
+          {
+            "name": "Section Padding/large",
+            "token": "section-padding-large",
+            "type": "float",
+            "value": 64
+          },
+          {
+            "name": "Section Padding/x-large",
+            "token": "section-padding-x-large",
+            "type": "float",
+            "value": 80
+          },
+          {
+            "name": "Section Padding/xx-large",
+            "token": "section-padding-xx-large",
+            "type": "float",
+            "value": 120
+          }
+        ],
+        "strings": [],
+        "booleans": []
+      }
+    },
+    "Context": {
+      "id": "VariableCollectionId:29:6",
+      "modes": [
+        {
+          "id": "29:0",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [
+          {
+            "name": "Surfaces/Section/Auxiliary",
+            "token": "surfaces-section-auxiliary",
+            "type": "color",
+            "value": "#151612"
+          },
+          {
+            "name": "Surfaces/Section/Primary",
+            "token": "surfaces-section-primary",
+            "type": "color",
+            "value": "#ffd115"
+          },
+          {
+            "name": "Surfaces/Section/Secondary",
+            "token": "surfaces-section-secondary",
+            "type": "color",
+            "value": "#383c31"
+          },
+          {
+            "name": "Surfaces/Section/Featured",
+            "token": "surfaces-section-featured",
+            "type": "color",
+            "value": "#fff6d0"
+          },
+          {
+            "name": "Body/Content/Accent",
+            "token": "body-content-accent",
+            "type": "color",
+            "value": "#ef8c48"
+          },
+          {
+            "name": "Body/Content/Primary",
+            "token": "body-content-primary",
+            "type": "color",
+            "value": "#151612"
+          },
+          {
+            "name": "Body/Content/Featured",
+            "token": "body-content-featured",
+            "type": "color",
+            "value": "#fff6d0"
+          },
+          {
+            "name": "Body/Content/Auxiliary",
+            "token": "body-content-auxiliary",
+            "type": "color",
+            "value": "#383c31"
+          },
+          {
+            "name": "Surfaces/Action/Destructive/light",
+            "token": "surfaces-action-destructive-light",
+            "type": "color",
+            "value": "#ef2056"
+          },
+          {
+            "name": "Surfaces/Section/Form Field",
+            "token": "surfaces-section-form-field",
+            "type": "color",
+            "value": "#f7f7f7"
+          },
+          {
+            "name": "Body/Content/Placeholder",
+            "token": "body-content-placeholder",
+            "type": "color",
+            "value": "#979994"
+          },
+          {
+            "name": "Body/Content/Secondary",
+            "token": "body-content-secondary",
+            "type": "color",
+            "value": "#f7f7f7"
+          }
+        ],
+        "numbers": [],
+        "strings": [],
+        "booleans": []
+      }
+    }
+  },
+  "metadata": {
+    "exportDate": "2026-10-12T11:17:35.004Z",
+    "figmaFileKey": "unknown",
+    "fileName": "RS 2026 | Design System",
+    "pluginVersion": "1.0.0",
+    "collectionsFound": 3,
+    "collectionsExported": 3
+  }
+}

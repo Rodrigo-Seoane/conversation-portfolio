@@ -58,7 +58,7 @@
 }
 
 /* ─────────────────────────────────────────────────────────────
-   LAYER 1 — Primitives (raw ramps from Figma figma-variables-12-09.json)
+   LAYER 1 — Primitives (raw ramps from Figma figma-export.json)
    Lives in :root so Tailwind does NOT generate utilities directly from primitives.
    Never reference these in components — use semantic or context roles below.
 ───────────────────────────────────────────────────────────────*/
