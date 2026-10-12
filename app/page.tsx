@@ -1,24 +1,22 @@
 import { BrandIcon } from "@/components/ui/BrandIcon";
+import { ChatApp } from "@/components/chat/ChatApp";
 
 /**
- * Phase 1 scaffold placeholder.
- *
- * The real page is a single-screen conversational UI (chat as the hero,
- * empty-state trigger chips, persona-driven cards) — that's Phase 4 of
- * kickoff-conversational-portfolio.md, after the KB (Phase 2) and the
- * conversation spec (Phase 3) are approved. This placeholder exists only to
- * prove the scaffold builds and the design-system tokens/components wired up
- * in this pass render correctly.
+ * Phase 4: single page, chat as the hero (kickoff brief Phase 4 "Layout").
+ * No positioning-headline copy here — fact-positioning-headline is still
+ * `status: "proposed"`, not approved, so the header stays generic
+ * (docs/conversation-spec.md / content/kb/PENDING.md).
  */
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-6 px-6 text-center">
-      <BrandIcon size="large" />
-      <h1 className="type-h1 text-body-content-primary">Conversational Portfolio</h1>
-      <p className="type-body-lg text-body-content-auxiliary max-w-[480px]">
-        Scaffold in progress — the chat UI lands in a later phase. See{" "}
-        <code className="type-body-sm">kickoff-conversational-portfolio.md</code>.
-      </p>
+    <main className="flex min-h-screen flex-col">
+      <header className="flex items-center gap-3 px-4 pt-6">
+        <BrandIcon size="small" />
+        <span className="type-body-md font-semibold text-body-content-primary">
+          Rodrigo Seoane
+        </span>
+      </header>
+      <ChatApp />
     </main>
   );
 }
