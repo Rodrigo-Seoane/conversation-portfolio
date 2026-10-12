@@ -1,0 +1,392 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   Design token system — conversational-portfolio
+   Mirrored from rodrigoseoane-2026 @ aae5036a2d7f20c8a378e6a6298b85dcb36384a6 on 2026-10-12.
+   Figma SQxK0aLPYfOCGVCUUnjzm6 remains the source of truth. Re-sync from a variable export,
+   never by hand-editing values. See Design.md header and DRIFT.md for fixes applied on import.
+
+   Layer hierarchy (each layer references the one above it):
+     0 · Scale         — base-4 px values (root of everything)
+     1 · Primitives    — raw hex values (intermediate ramps)
+     2 · Semantic      — functional color roles (content-action-primary, etc.)
+     2.5 · Context     — section backgrounds & body content roles (surfaces-section-*, body-content-*)
+     3 · Structural    — radius, border, elevation (reference Scale)
+     4 · Spacing       — component + section semantic names (reference Scale)
+     5 · Typography    — families, weights, and role classes (type-hero, type-h1-h5, type-body-*, type-caption-*)
+
+   Rules for agents:
+     · Never reference Scale directly for spacing — use semantic spacing names
+     · Never reference Primitives directly in components — use semantic or context roles
+     · Never hardcode hex or px — use a token
+   ═══════════════════════════════════════════════════════════════════════ */
+
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   LAYER 0 — Scale (base-4: Scale/n = n × 4px)
+   Lives in :root. Agents never reference these directly.
+
+   DRIFT FIX (see DRIFT.md #3): added the steps Design.md §4 lists that were
+   missing from the mirrored file — 2.5, 3.5, 7, 9, 11, 13, 14, 15.
+───────────────────────────────────────────────────────────────*/
+:root {
+  --scale-0:   0px;
+  --scale-025: 1px;
+  --scale-05:  2px;
+  --scale-1:   4px;
+  --scale-2:   8px;
+  --scale-2-5: 10px;
+  --scale-3:   12px;
+  --scale-3-5: 14px;
+  --scale-4:   16px;
+  --scale-4-5: 18px;
+  --scale-5:   20px;
+  --scale-6:   24px;
+  --scale-7:   28px;
+  --scale-8:   32px;
+  --scale-9:   36px;
+  --scale-10:  40px;
+  --scale-11:  44px;
+  --scale-12:  48px;
+  --scale-13:  52px;
+  --scale-14:  56px;
+  --scale-15:  60px;
+  --scale-16:  64px;
+  --scale-20:  80px;
+  --scale-24:  96px;
+  --scale-30:  120px;
+  --scale-36:  144px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LAYER 1 — Primitives (raw ramps from Figma figma-variables-12-09.json)
+   Lives in :root so Tailwind does NOT generate utilities directly from primitives.
+   Never reference these in components — use semantic or context roles below.
+───────────────────────────────────────────────────────────────*/
+:root {
+  /* Primary Colors / Vibrant Gold */
+  --primitive-gold-50:      #FFFDF3;
+  --primitive-gold-100:     #FFFAE8;
+  --primitive-gold-200:     #FFF6D0;
+  --primitive-gold-300:     #FFEDA1;
+  --primitive-gold-400:     #FFE373;
+  --primitive-gold-500:     #FFDA44;
+  --primitive-gold-default: #FFD115;
+  --primitive-gold-700:     #CCA711;
+  --primitive-gold-800:     #997D0D;
+  --primitive-gold-900:     #665408;
+  --primitive-gold-1000:    #332A04;
+  --primitive-gold-1100:    #1A1502;
+  --primitive-gold-1200:    #0D0A01;
+
+  /* Primary Colors / Neutral (Dark / Slate ramp) */
+  --primitive-neutral-50:      #F7F7F7;
+  --primitive-neutral-100:     #DFE0DE;
+  --primitive-neutral-200:     #C7C8C6;
+  --primitive-neutral-300:     #979994;
+  --primitive-neutral-400:     #686B63;
+  --primitive-neutral-default: #686B63;
+  --primitive-neutral-500:     #383C31;
+  --primitive-neutral-600:     #262921;
+  --primitive-neutral-700:     #151612;
+
+  /* Primary Colors / Orange Zest (Auxiliary Accent) */
+  --primitive-orange-50:      #FDF3ED;
+  --primitive-orange-100:     #FBE2D1;
+  --primitive-orange-200:     #F9D1B6;
+  --primitive-orange-300:     #F6C09A;
+  --primitive-orange-400:     #F4AF7F;
+  --primitive-orange-500:     #F19D63;
+  --primitive-orange-default: #EF8C48;
+  --primitive-orange-700:     #CB773D;
+  --primitive-orange-800:     #A76232;
+  --primitive-orange-900:     #834D28;
+  --primitive-orange-1000:    #60381D;
+  --primitive-orange-1100:    #3C2312;
+  --primitive-orange-1200:    #180E07;
+
+  /* Accent Colors / Feedback Ramps */
+  --primitive-success-50:      #F3FBEE;
+  --primitive-success-100:     #DDF4D2;
+  --primitive-success-200:     #B5E89C;
+  --primitive-success-300:     #87D95E;
+  --primitive-success-default: #67D034;
+  --primitive-success-500:     #4B9924;
+  --primitive-success-600:     #244A11;
+  --primitive-success-700:     #0C1906;
+
+  --primitive-error-50:      #FEF1F4;
+  --primitive-error-100:     #FBC6D4;
+  --primitive-error-200:     #F792AC;
+  --primitive-error-300:     #F3547D;
+  --primitive-error-default: #EF2056;
+  --primitive-error-500:     #AB0C36;
+  --primitive-error-600:     #690821;
+  --primitive-error-700:     #130106;
+
+  --primitive-warning-50:      #FDF8EF;
+  --primitive-warning-100:     #FBEED8;
+  --primitive-warning-200:     #F7DDB1;
+  --primitive-warning-300:     #F1C780;
+  --primitive-warning-default: #EAA93C;
+  --primitive-warning-500:     #C79033;
+  --primitive-warning-600:     #815D21;
+  --primitive-warning-700:     #2F220C;
+
+  --primitive-info-50:      #EEF3FB;
+  --primitive-info-100:     #D6E2F5;
+  --primitive-info-200:     #A4BEEA;
+  --primitive-info-300:     #5A89D8;
+  --primitive-info-default: #2859AB;
+  --primitive-info-500:     #1F4584;
+  --primitive-info-600:     #11274A;
+  --primitive-info-700:     #060D19;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LAYER 2 — Semantic & Context Colors (Figma "Semantic" & "Context")
+   @theme inline → Tailwind generates utility classes:
+     bg-content-action-primary, text-content-action-secondary-700,
+     bg-surfaces-section-primary, text-body-content-primary, etc.
+───────────────────────────────────────────────────────────────*/
+@theme inline {
+  /* Content Action / Primary — Gold signature */
+  --color-content-action-primary:         var(--primitive-gold-default);
+  --color-content-action-primary-50:      var(--primitive-gold-50);
+  --color-content-action-primary-100:     var(--primitive-gold-100);
+  --color-content-action-primary-200:     var(--primitive-gold-200);
+  --color-content-action-primary-300:     var(--primitive-gold-300);
+  --color-content-action-primary-400:     var(--primitive-gold-400);
+  --color-content-action-primary-500:     var(--primitive-gold-500);
+  --color-content-action-primary-700:     var(--primitive-gold-700);
+  --color-content-action-primary-800:     var(--primitive-gold-800);
+  --color-content-action-primary-900:     var(--primitive-gold-900);
+  --color-content-action-primary-1000:    var(--primitive-gold-1000);
+  --color-content-action-primary-1100:    var(--primitive-gold-1100);
+  --color-content-action-primary-1200:    var(--primitive-gold-1200);
+
+  /* Content Action / Secondary — Neutral / Dark ramp */
+  --color-content-action-secondary:       var(--primitive-neutral-default);
+  --color-content-action-secondary-50:    var(--primitive-neutral-50);
+  --color-content-action-secondary-100:   var(--primitive-neutral-100);
+  --color-content-action-secondary-200:   var(--primitive-neutral-200);
+  --color-content-action-secondary-300:   var(--primitive-neutral-300);
+  --color-content-action-secondary-500:   var(--primitive-neutral-500);
+  --color-content-action-secondary-600:   var(--primitive-neutral-600);
+  --color-content-action-secondary-700:   var(--primitive-neutral-700);
+
+  /* Content Action / Auxiliary — Orange Zest */
+  --color-content-action-auxiliary:       var(--primitive-orange-default);
+  --color-content-action-auxiliary-50:    var(--primitive-orange-50);
+  --color-content-action-auxiliary-100:   var(--primitive-orange-100);
+  --color-content-action-auxiliary-200:   var(--primitive-orange-200);
+  --color-content-action-auxiliary-300:   var(--primitive-orange-300);
+  --color-content-action-auxiliary-400:   var(--primitive-orange-400);
+  --color-content-action-auxiliary-500:   var(--primitive-orange-500);
+  --color-content-action-auxiliary-700:   var(--primitive-orange-700);
+  --color-content-action-auxiliary-800:   var(--primitive-orange-800);
+  --color-content-action-auxiliary-900:   var(--primitive-orange-900);
+  --color-content-action-auxiliary-1000:  var(--primitive-orange-1000);
+  --color-content-action-auxiliary-1100:  var(--primitive-orange-1100);
+  --color-content-action-auxiliary-1200:  var(--primitive-orange-1200);
+
+  /* Accent Colors — Feedback states */
+  --color-accent-success:         var(--primitive-success-default);
+  --color-accent-success-50:      var(--primitive-success-50);
+  --color-accent-success-100:     var(--primitive-success-100);
+  --color-accent-success-200:     var(--primitive-success-200);
+  --color-accent-success-300:     var(--primitive-success-300);
+  --color-accent-success-500:     var(--primitive-success-500);
+  --color-accent-success-600:     var(--primitive-success-600);
+  --color-accent-success-700:     var(--primitive-success-700);
+
+  --color-accent-error:           var(--primitive-error-default);
+  --color-accent-error-50:        var(--primitive-error-50);
+  --color-accent-error-100:       var(--primitive-error-100);
+  --color-accent-error-200:       var(--primitive-error-200);
+  --color-accent-error-300:       var(--primitive-error-300);
+  --color-accent-error-500:       var(--primitive-error-500);
+  --color-accent-error-600:       var(--primitive-error-600);
+  --color-accent-error-700:       var(--primitive-error-700);
+
+  --color-accent-warning:         var(--primitive-warning-default);
+  --color-accent-warning-50:      var(--primitive-warning-50);
+  --color-accent-warning-100:     var(--primitive-warning-100);
+  --color-accent-warning-200:     var(--primitive-warning-200);
+  --color-accent-warning-300:     var(--primitive-warning-300);
+  --color-accent-warning-500:     var(--primitive-warning-500);
+  --color-accent-warning-600:     var(--primitive-warning-600);
+  --color-accent-warning-700:     var(--primitive-warning-700);
+
+  --color-accent-info:            var(--primitive-info-default);
+  --color-accent-info-50:         var(--primitive-info-50);
+  --color-accent-info-100:        var(--primitive-info-100);
+  --color-accent-info-200:        var(--primitive-info-200);
+  --color-accent-info-300:        var(--primitive-info-300);
+  --color-accent-info-500:        var(--primitive-info-500);
+  --color-accent-info-600:        var(--primitive-info-600);
+  --color-accent-info-700:        var(--primitive-info-700);
+
+  /* LAYER 2.5 — Context Roles (Figma "Context" Collection) */
+  --color-surfaces-section-primary:   var(--primitive-gold-default);      /* #FFD115 */
+  --color-surfaces-section-secondary: var(--primitive-neutral-500);     /* #383C31 */
+  --color-surfaces-section-auxiliary: var(--primitive-neutral-700);     /* #151612 */
+  --color-surfaces-section-featured:  var(--primitive-gold-200);        /* #FFF6D0 */
+  --color-surfaces-section-form-field:var(--primitive-neutral-50);       /* #F7F7F7 */
+  --color-surfaces-action-destructive:var(--primitive-error-default);    /* #EF2056 */
+
+  --color-body-content-primary:       var(--primitive-neutral-700);     /* #151612 */
+  --color-body-content-secondary:     var(--primitive-neutral-50);      /* #F7F7F7 */
+  --color-body-content-auxiliary:     var(--primitive-neutral-500);     /* #383C31 */
+  --color-body-content-featured:      var(--primitive-gold-200);        /* #FFF6D0 */
+  --color-body-content-accent:        var(--primitive-orange-default);  /* #EF8C48 */
+  --color-body-content-placeholder:   var(--primitive-neutral-300);     /* #979994 */
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LAYER 3 — Structural tokens (radius, border, elevation)
+
+   DRIFT FIX (see DRIFT.md #4): renamed from the invented xs/sm/md/lg/xl
+   naming to the real Figma token names (`Round Corners/*`, `Border Thick/*`,
+   Semantic collection) per Design.md §4. This also fixed a duplicate — the
+   old --border-xs and --border-sm both mapped to 1px; there is now one
+   `small` step.
+───────────────────────────────────────────────────────────────*/
+@theme inline {
+  /* Border radius — Round Corners/* */
+  --radius-none:    var(--scale-0);    /* 0px */
+  --radius-x-small:  var(--scale-05);  /* 2px */
+  --radius-small:    var(--scale-1);   /* 4px */
+  --radius-regular:  var(--scale-2);   /* 8px */
+  --radius-large:    var(--scale-3);   /* 12px */
+  --radius-x-large:  var(--scale-4);   /* 16px */
+  --radius-round:    var(--scale-16);  /* 64px */
+
+  /* Border thickness — Border Thick/* */
+  --border-none:    var(--scale-0);    /* 0px */
+  --border-small:    var(--scale-025); /* 1px */
+  --border-regular:  var(--scale-05);  /* 2px */
+  --border-large:    var(--scale-1);   /* 4px */
+  --border-x-large:  var(--scale-2);   /* 8px */
+
+  /* Elevation */
+  --shadow-tooltip: 0px 4px 24px 0px rgba(5, 3, 38, 0.08);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LAYER 4 — Semantic spacing
+───────────────────────────────────────────────────────────────*/
+@theme inline {
+  /* Component spacing */
+  --spacing-comp-none: var(--scale-0);
+  --spacing-comp-2xs:  var(--scale-025);  /* 1px */
+  --spacing-comp-xs:   var(--scale-05);   /* 2px */
+  --spacing-comp-sm:   var(--scale-1);    /* 4px */
+  --spacing-comp-md:   var(--scale-2);    /* 8px */
+  --spacing-comp-lg:   var(--scale-4);    /* 16px */
+  --spacing-comp-xl:   var(--scale-6);    /* 24px */
+  --spacing-comp-2xl:  var(--scale-8);    /* 32px */
+
+  /* Section spacing */
+  --spacing-sect-none: var(--scale-0);
+  --spacing-sect-xs:   var(--scale-4);    /* 16px */
+  --spacing-sect-sm:   var(--scale-6);    /* 24px */
+  --spacing-sect-md:   var(--scale-10);   /* 40px */
+  --spacing-sect-lg:   var(--scale-16);   /* 64px */
+  --spacing-sect-xl:   var(--scale-20);   /* 80px */
+  --spacing-sect-2xl:  var(--scale-30);   /* 120px */
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LAYER 5 — Typography
+───────────────────────────────────────────────────────────────*/
+@theme inline {
+  --font-display: var(--font-plus-jakarta-sans);
+  --font-body:    var(--font-inter);
+}
+
+/*
+  DRIFT FIX (see DRIFT.md #2): added --font-weight-extrabold (800). Design.md §3
+  specifies ExtraBold 800 for the body eyebrow/label variant; this file previously
+  had no 800 weight var at all.
+*/
+:root {
+  --font-weight-light:     300;
+  --font-weight-regular:   400;
+  --font-weight-semibold:  600;
+  --font-weight-bold:      700;
+  --font-weight-extrabold: 800;
+}
+
+@layer components {
+  /* ── Hero & Display Styles ── */
+  .type-hero {
+    font-family: var(--font-display);
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0;
+  }
+  .type-display-subtitle {
+    font-family: var(--font-body);
+    font-size: 20px;
+    line-height: 1.48;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0;
+  }
+  .type-display-mobile-title {
+    font-family: var(--font-display);
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0;
+  }
+  .type-display-mobile-subtitle {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.32;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0;
+  }
+
+  /* ── Headings (Plus Jakarta Sans, SemiBold 600) ── */
+  .type-h1 { font-family: var(--font-display); font-size: 28px; line-height: 36px; font-weight: var(--font-weight-semibold); }
+  .type-h2 { font-family: var(--font-display); font-size: 24px; line-height: 30px; font-weight: var(--font-weight-semibold); }
+  .type-h3 { font-family: var(--font-display); font-size: 20px; line-height: 28px; font-weight: var(--font-weight-semibold); }
+  .type-h4 { font-family: var(--font-display); font-size: 18px; line-height: 24px; font-weight: var(--font-weight-semibold); }
+  .type-h5 { font-family: var(--font-display); font-size: 16px; line-height: 24px; font-weight: var(--font-weight-semibold); }
+
+  /* ── Body (Inter, default Regular — vary weight via modifier classes) ──
+     DRIFT FIX (see DRIFT.md #1): removed `margin-bottom: var(--scale-3)`.
+     Design.md §3 (12-09 export correction) says body paragraph spacing is
+     0px — use section/component spacing or an explicit margin instead. */
+  .type-body-xl { font-family: var(--font-body); font-size: 18px; line-height: 28px; font-weight: var(--font-weight-regular); }
+  .type-body-lg { font-family: var(--font-body); font-size: 16px; line-height: 24px; font-weight: var(--font-weight-regular); }
+  .type-body-md { font-family: var(--font-body); font-size: 14px; line-height: 20px; font-weight: var(--font-weight-regular); }
+  .type-body-sm { font-family: var(--font-body); font-size: 12px; line-height: 20px; font-weight: var(--font-weight-regular); }
+  .type-body-xs { font-family: var(--font-body); font-size: 10px; line-height: 16px; font-weight: var(--font-weight-regular); }
+
+  /* ── Captions (Inter, Bold / SemiBold) ── */
+  .type-caption-lg {
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .type-caption-md {
+    font-family: var(--font-body);
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.04em;
+  }
+  .type-caption-sm {
+    font-family: var(--font-body);
+    font-size: 8px;
+    line-height: 12px;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+}
