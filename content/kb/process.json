@@ -1,0 +1,53 @@
+[
+  {
+    "id": "process-observed-recent-work",
+    "title": "Process observed in recent work",
+    "steps": [
+      {
+        "order": 1,
+        "title": "Discover",
+        "description": "Gather evidence from stakeholders, SMEs, research, QA, and implementation constraints."
+      },
+      {
+        "order": 2,
+        "title": "Clarify",
+        "description": "Scope the problem, audience, terminology, taxonomy, workflows, and dependencies."
+      },
+      {
+        "order": 3,
+        "title": "Decide",
+        "description": "Make scope, priorities, risks, and open questions explicit."
+      },
+      {
+        "order": 4,
+        "title": "Structure",
+        "description": "Organize phases, epics, stories, ownership, standards, and delivery criteria."
+      },
+      {
+        "order": 5,
+        "title": "Explore and validate",
+        "description": "Create flows and prototypes, review alternatives, and incorporate feedback."
+      },
+      {
+        "order": 6,
+        "title": "Document and deliver",
+        "description": "Maintain documentation, components, specifications, and Jira-linked handoff."
+      },
+      {
+        "order": 7,
+        "title": "Close the loop",
+        "description": "Review implementation, testing, and QA, and feed findings back into the design system."
+      }
+    ],
+    "principles": [
+      "Make decisions, risks, and dependencies visible.",
+      "Balance system consistency with product-specific needs.",
+      "Work with PMs, engineering, QA, SMEs, technical writers, and design-system contributors.",
+      "Use AI to support documentation and specification without hiding human review, feasibility, and safety.",
+      "Never promise a universal time-to-value without knowing scope, access, and team autonomy."
+    ],
+    "status": "proposed",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §4 — Process & Collaboration (editorial synthesis of monthly records; not yet confirmed as Rodrigo's standard process across all contexts)"
+  }
+]

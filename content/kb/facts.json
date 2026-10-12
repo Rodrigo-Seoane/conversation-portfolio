@@ -1,0 +1,110 @@
+[
+  {
+    "id": "fact-positioning-headline",
+    "key": "positioning.headline",
+    "value": "Senior Product Designer and Design Lead. Helps teams turn complex B2B products into clearer, more consistent experiences — connecting strategy, workflows, design systems, and delivery.",
+    "status": "proposed",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §1 — Posicionamento recomendado (editorial proposal, not yet approved)",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-location",
+    "key": "location.city",
+    "value": "Barcelona, Spain",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §6 — Availability & Contact; public site",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-contact-email",
+    "key": "contact.email",
+    "value": "business@rodrigoseoane.com",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §6 — Availability & Contact",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-contact-intro-call",
+    "key": "contact.introCall",
+    "value": "A 20-minute introductory call, as mentioned on the About Me page.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §6 — Availability & Contact",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-availability-current",
+    "key": "availability.current",
+    "value": null,
+    "status": "pending",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §6 — Availability & Contact; §8 Prioridade 3",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-availability-start-date",
+    "key": "availability.startDate",
+    "value": null,
+    "status": "pending",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §6 — Availability & Contact; §8 Prioridade 3",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-availability-overlap-window",
+    "key": "availability.overlapWindow",
+    "value": null,
+    "status": "pending",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §6 — Availability & Contact; location does not confirm available hours",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-rate-day-rate",
+    "key": "rate.dayRate",
+    "value": null,
+    "status": "pending",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §5 — Pendências comerciais; §8 Prioridade 3",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-rate-salary-expectation",
+    "key": "rate.salaryExpectation",
+    "value": null,
+    "status": "pending",
+    "visibility": "public",
+    "source": "Inventário de Conteúdo §5 — Pendências comerciais; §8 Prioridade 3",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-current-role-generic",
+    "key": "experience.currentRoleGeneric",
+    "value": "Since September 2025, works as Senior UX Designer / Design Lead on a B2B contact-center / cloud operations platform.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "CV; Inventário de Conteúdo §0 — only the generic platform description and the capability list (§1–§2) may be stated publicly about this engagement",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-prior-role-axa",
+    "key": "experience.priorRoleAxa",
+    "value": "AXA Group Operations, September 2024 to June 2025. CV records leadership of two AI proofs of concept during this period.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "CV; Inventário de Conteúdo §1 — Outras experiências",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "fact-prior-role-atlas",
+    "key": "experience.priorRoleAtlas",
+    "value": "ATS / Atlas, July 2021 to May 2023.",
+    "status": "documented",
+    "visibility": "public",
+    "source": "CV",
+    "updatedAt": "2026-10-12"
+  }
+]
